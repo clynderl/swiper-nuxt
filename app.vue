@@ -34,7 +34,15 @@
     </Swiper>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+if (process.client) {
+  const { tg } = useTelegram();
+  onMounted(() => {
+    tg.ready();
+    tg.expand();
+  });
+}
+</script>
 
 <style scoped>
 .slide {
