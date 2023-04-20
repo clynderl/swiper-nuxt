@@ -16,17 +16,17 @@
       }"
       :modules="[SwiperEffectCreative]"
     >
-      <SwiperSlide class="h-sm bg-coolgray">
+      <SwiperSlide class="bg-coolgray slide">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
         dignissimos dolores error est impedit ipsa iusto, magni perspiciatis
         quae! Porro.
       </SwiperSlide>
-      <SwiperSlide class="h-sm bg-blue">
+      <SwiperSlide class="bg-blue slide">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam
         eligendi explicabo nisi officia quos temporibus veritatis. Aliquam,
         quod, rerum.
       </SwiperSlide>
-      <SwiperSlide class="h-sm bg-red">
+      <SwiperSlide class="bg-red slide">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam
         dolore esse exercitationem magni quas quasi suscipit. Aut, odio,
         reprehenderit?
@@ -35,3 +35,9 @@
   </div>
 </template>
 <script setup lang="ts"></script>
+
+<style scoped>
+.slide {
+  height: 100vh;
+}
+</style>
