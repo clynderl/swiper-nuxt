@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  ssr: false,
   modules: [
     '@nuxtjs/eslint-module',
     '@anu-vue/nuxt',
